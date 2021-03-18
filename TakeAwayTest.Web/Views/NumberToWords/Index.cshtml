@@ -1,0 +1,12 @@
+﻿@model TakeAwayTest.Web.Models.PersonResultDto
+
+@if (Model.Words == null)
+{
+    <h1>No Data</h1>
+}
+else
+{
+    <h1>@Model.Name</h1>
+    <h1>@Model.Words</h1>
+}
+<a asp-action="PersonTransformer">TestInput</a>
